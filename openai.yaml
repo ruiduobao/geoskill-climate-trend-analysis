@@ -1,0 +1,17 @@
+name: geoskill-climate-trend-analysis
+display_name: 气候趋势分析
+description: |
+  对温度/降水时序执行 Mann-Kendall 趋势检验与 Sen 斜率（Sen slope）估计，输出趋势斜率栅格、显著性（p 值）栅格与时序统计 JSON。Mann-Kendall trend test and Sen slope estimator for temperature/precipitation time series, outputting slope raster, significance (p-value) raster, and time-series JSON.
+version: 0.1.0
+author: Mavis
+entrypoint: geoskill-climate-trend-analysis.py
+runtime: python>=3.9
+tags:
+  - analysis
+  - climate
+  - dem
+  - gis
+  - raster
+  - remote-sensing
+  - terrain
+  - time-series

@@ -1,0 +1,80 @@
+{
+  "skill": "climate-trend-analysis",
+  "skill_version": "1.0.0",
+  "command": "climate-trend-analysis --bbox 116 39 117 40 --synthetic --variable temperature --n-dates 12 --quiet --output-dir ./_test_cli_synth",
+  "started_at": "2026-08-03T14:57:29.527404Z",
+  "finished_at": "2026-08-03T14:57:30.017898Z",
+  "exit_code": 0,
+  "inputs": {
+    "input": null,
+    "variable": "temperature",
+    "n_dates": 12,
+    "synthetic": true
+  },
+  "aoi": null,
+  "datasets": [],
+  "outputs": [
+    {
+      "path": "./_test_cli_synth\\trend_slope.tif",
+      "kind": "raster",
+      "size_bytes": null,
+      "crs_epsg": 4326,
+      "bbox_wgs84": [
+        116.0,
+        39.0,
+        117.0,
+        40.0
+      ],
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": 2,
+      "feature_count": null,
+      "row_count": null
+    },
+    {
+      "path": "./_test_cli_synth\\significance.tif",
+      "kind": "raster",
+      "size_bytes": null,
+      "crs_epsg": 4326,
+      "bbox_wgs84": [
+        116.0,
+        39.0,
+        117.0,
+        40.0
+      ],
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": 1,
+      "feature_count": null,
+      "row_count": null
+    },
+    {
+      "path": "./_test_cli_synth\\timeseries.json",
+      "kind": "json",
+      "size_bytes": null,
+      "crs_epsg": null,
+      "bbox_wgs84": null,
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": null,
+      "feature_count": null,
+      "row_count": null
+    }
+  ],
+  "qa": {
+    "source": "synthetic",
+    "variable": "temperature",
+    "n_dates": 12,
+    "n_valid_pixels": 4096,
+    "mean_sen_slope": 0.02710535004734993,
+    "mean_ols_slope": 0.027129175141453743,
+    "frac_significant": 0.071533203125,
+    "alpha": 0.05,
+    "synthetic_truth_mean_rate": 0.07499999552965164
+  },
+  "software": {
+    "python": "3.9.21",
+    "skill": "climate-trend-analysis"
+  },
+  "error": null
+}
